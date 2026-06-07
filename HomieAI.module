@@ -2,6 +2,11 @@
 #!desc=ChatGPT / Claude 自定义分流规则
 #!author=Homie
 
+[Proxy Group]
+AI = select, policy-regex-filter=美国|US|Japan|JP|新加坡|SG
+CLAUDE = select, policy-regex-filter=美国|US
+PROXY = select, policy-regex-filter=.*
+
 [Rule]
 # ChatGPT
 DOMAIN-SUFFIX,openai.com,AI
