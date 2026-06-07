@@ -1,0 +1,28 @@
+#!name=Homie AI Rules
+#!desc=ChatGPT / Claude 自定义分流规则
+#!author=Homie
+
+[Rule]
+# ChatGPT
+DOMAIN-SUFFIX,openai.com,AI
+DOMAIN-SUFFIX,chatgpt.com,AI
+DOMAIN-SUFFIX,oaistatic.com,AI
+DOMAIN-SUFFIX,oaiusercontent.com,AI
+DOMAIN-SUFFIX,arkoselabs.com,AI
+DOMAIN-SUFFIX,auth0.com,AI
+DOMAIN-KEYWORD,openai,AI
+
+# Claude
+DOMAIN-SUFFIX,anthropic.com,CLAUDE
+DOMAIN-SUFFIX,claude.ai,CLAUDE
+DOMAIN-SUFFIX,claudeusercontent.com,CLAUDE
+DOMAIN-SUFFIX,clau.de,CLAUDE
+DOMAIN-KEYWORD,claude,CLAUDE
+
+# 通用辅助与支付依赖
+DOMAIN-SUFFIX,stripe.com,AI
+DOMAIN-SUFFIX,sentry.io,AI
+DOMAIN-SUFFIX,statsigapi.net,AI
+DOMAIN-SUFFIX,intercom.io,AI
+DOMAIN-SUFFIX,intercomcdn.com,AI
+DOMAIN-SUFFIX,identrust.com,AI
